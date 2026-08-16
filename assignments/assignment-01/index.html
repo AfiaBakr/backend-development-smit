@@ -1,0 +1,240 @@
+<!-- Question 1 — Create Your First HTML Web Page -->
+<!-- A proper HTML5 document structure. -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- A <title> inside the <head> -->
+    <title>My Introduction</title>
+  </head>
+  <body>
+    <!-- An <h1> containing your name. -->
+    <h1>Afia Bakr</h1>
+    <!-- An <h2> containing "About Me" -->
+    <h2>About Me</h2>
+    <!-- A paragraph introducing yourself. -->
+    <p>
+      Hello, I am Afia Bakr. I am a web developer passionate about creating
+      engaging and user-friendly websites.
+    </p>
+    <!-- Another paragraph explaining why you are interested in learning web development. -->
+    <h2>Why I Want to Learn Web Development</h2>
+    <p>
+      I am interested in learning web development because it allows me to create
+      interactive and visually appealing websites that can reach a wide
+      audience.
+    </p>
+    <!-- An unordered list containing at least 3 hobbies or interests. -->
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Reading</li>
+      <li>Traveling</li>
+      <li>Photography</li>
+    </ul>
+    <!-- An ordered list containing at least 3 goals you want to achieve as a web developer. -->
+    <h2>My Goals as a Web Developer</h2>
+    <ol>
+      <li>Master HTML, CSS, and JavaScript</li>
+      <li>Build responsive and accessible websites</li>
+      <li>Contribute to open-source web development projects</li>
+    </ol>
+    <hr />
+    <!-- Question 2 — Links and Images -->
+    <hr />
+    <!-- A heading: "My Favorite Websites" -->
+    <h1>My Favorite Websites</h1>
+    <!-- A paragraph explaining which websites you frequently use. -->
+    <p>
+      My favorite websites is <a href="https://flow.google.com">Google Flow</a>.
+      I frequently use Google Flow because it helps me create and explore
+      creative AI-generated content. I enjoy using it for experimenting with
+      ideas, generating visuals, and learning new AI techniques.
+    </p>
+    <!-- At least 3 links to different websites.
+    Each link should open in a new browser tab.
+    Add an image below the links.
+    The image must contain appropriate alt text.
+    Make the image clickable so that clicking the image opens a website -->
+    <h2>Other Favorite Websites</h2>
+    <ul>
+      <li>
+        <a href="https://www.gulahmedshop.com/" target="_blank"
+          >Ideas By GulAhmed<br><img src="gulahmed.jpg"  width="300px" height="100"/></a>
+      </li>
+      <li>
+        <a href="https://saya.pk/" target="_blank"
+          >Saya<br><img src="saya.jpg" alt="Saya"  width="300px" height="100"/></a>
+        
+      </li>
+      <li>
+        <a href="https://www.mariab.pk/" target="_blank"
+          >Maria B<br><img src="mariab.jpg" alt="Maria B"  width="300px" height="100"/></a>
+      </li>
+    </ul>
+    <hr />
+    <!-- Question 3 — Create a Student Marks Table -->
+     <hr>
+    <style>
+        body {
+            background-color: #1f1f1f;
+            color: #cccccc;
+            font-family: Arial, sans-serif;
+        }
+        /* Table style */
+        h1 {
+            color:white;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        th {
+            color: #cccccc;
+            font-size: 22px;
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid #777777;
+        }
+
+        td {
+            font-size: 20px;
+            padding: 12px 15px;
+            border-bottom: 1px solid #444444;
+        }
+        /* Form Style */
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 9px 18px;
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        
+    </style>
+
+    <h1>Student Marks</h1>
+
+    <table>
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Ali</td>
+            <td>80</td>
+            <td>75</td>
+            <td>155</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Sara</td>
+            <td>90</td>
+            <td>85</td>
+            <td>175</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Ahmed</td>
+            <td>70</td>
+            <td>80</td>
+            <td>150</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Ayesha</td>
+            <td>95</td>
+            <td>90</td>
+            <td>185</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- Question 4 — Create a Student Registration Form -->
+     <hr>
+         
+     <h1>Student Registration Form</h1>
+ <form>
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <label for="date">Date of Birth:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label>Favorite Programming Languages:</label><br>
+
+    <input type="checkbox" id="html" name="language" value="HTML">
+    <label for="html">HTML</label><br>
+
+    <input type="checkbox" id="css" name="language" value="CSS">
+    <label for="css">CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="language" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" id="python" name="language" value="Python">
+    <label for="python">Python</label><br><br>
+
+    <label for="city">City:</label><br>
+    <select id="city" name="city">
+        <option value="">Select your city</option>
+        <option value="karachi">Karachi</option>
+        <option value="lahore">Lahore</option>
+        <option value="islamabad">Islamabad</option>
+        <option value="peshawar">Peshawar</option>
+    </select><br><br>
+
+    <label for="about">About Yourself:</label><br>
+    <textarea id="about" name="about" rows="5" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+</form>
+  </body>
+</html>
