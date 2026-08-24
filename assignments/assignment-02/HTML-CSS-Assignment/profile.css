@@ -1,0 +1,160 @@
+/* Page Styling */
+
+body {
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: #162b46;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #1e3a5f;
+    object-fit: cover;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-text h2,
+.skills-section h2,
+.journey h2,
+aside h2 {
+    color: #1e3a5f;
+    font-size: 1.8rem;
+}
+
+/* Skills */
+
+.skills-section {
+    background-color: #eaf2f8;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #c5d5e5;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Article */
+
+.journey {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-left: 5px solid #1e3a5f;
+}
+
+/* Aside */
+
+aside {
+    background-color: #fff3cd;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #e0c36c;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    min-height: 60px;
+}
+
+footer a {
+    color: #ffd166;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

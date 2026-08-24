@@ -1,0 +1,47 @@
+/* marks.css */
+h1 {
+    text-align: center;
+    color: #1e3a5f;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+table {
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #1e3a5f;
+}
+
+th {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px;
+    border: 1px solid #989797;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #f5f8fc;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #1e3a5f;
+}
+
+#total {
+    background-color: #d9ead3;
+    color: #155724;
+    font-weight: bold;
+    font-size: 17px;
+}

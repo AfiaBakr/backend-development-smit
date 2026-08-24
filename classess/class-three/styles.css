@@ -1,0 +1,47 @@
+/* this is styles.css file */
+     
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.5;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+body { background-image: url(bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+           background-color: rgba(174, 245, 183,0.5);
+            
+            padding: 1em;
+            text-align: center;
+        }
+        section {
+            padding: 2em;
+        }
+        article {
+            margin: 2em 0;
+            padding: 1em;
+            border: 1px solid #1f1e1e;
+        }
+        footer {
+            background-color: rgba(241, 241, 241, 0.5);
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    

@@ -1,0 +1,86 @@
+/* registration.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fc;
+    margin: 0;
+    padding: 30px;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+form {
+    position: relative;
+    width: 60%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border: 2px solid #1e3a5f;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f9fbff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #1e3a5f;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #999;
+    color: white;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.85;
+}
