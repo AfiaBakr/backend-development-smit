@@ -1,0 +1,350 @@
+/* ================================
+   Question 1 - Responsive Layout
+   Using CSS Grid + Media Queries
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-subscribe {
+    background-color: #2563eb;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* ================================
+   Header  (CSS Grid: 3 columns)
+   ================================ */
+.site-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 18px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    color: #3b82f6;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+}
+
+.main-nav a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main-nav a:hover {
+    color: #3b82f6;
+}
+
+/* Hamburger icon - hidden on desktop */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ================================
+   Hero Section  (CSS Grid: 2 columns)
+   ================================ */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    background-color: #f1f5f9;
+    padding: 60px 40px;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.hero-text .highlight {
+    display: block;
+    color: #2563eb;
+}
+
+.hero-text p {
+    margin-bottom: 24px;
+    max-width: 400px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ================================
+   Section Titles
+   ================================ */
+.section-title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #334155;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   Services Section  (CSS Grid: 3 columns)
+   ================================ */
+.services {
+    padding: 60px 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #f8fafc;
+}
+
+.card-icon {
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+/* ================================
+   Our Work Section  (CSS Grid: 4 columns)
+   ================================ */
+.work {
+    padding:20px 40px ;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.work-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+/* ================================
+   Footer  (CSS Grid: 4 columns)
+   ================================ */
+.site-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    padding: 50px 40px;
+}
+
+.footer-col h4 {
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.footer-col p {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.footer-col a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.footer-col a:hover {
+    color: #3b82f6;
+}
+
+.social {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.footer-col input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    font-size: 13px;
+    padding: 16px;
+    border-top: 1px solid #1e293b;
+}
+
+/* ================================
+   TABLET BREAKPOINT  (max-width: 992px)
+   ================================ */
+@media (max-width: 992px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ================================
+   MOBILE BREAKPOINT  (max-width: 600px)
+   ================================ */
+@media (max-width: 600px) {
+    /* Header: logo on the left, hamburger on the right */
+    .site-header {
+        grid-template-columns: 1fr auto;
+        padding: 16px 20px;
+    }
+
+    .main-nav,
+    .site-header .btn-primary {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    /* Hero: single column, left aligned, image hidden */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: left;
+        padding: 40px 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero-text p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    /* Services: one card per row, icon beside the text */
+    .services,
+    .work {
+        padding: 40px 20px 20px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        text-align: left;
+        align-items: center;
+    }
+
+    .card-icon {
+        margin-bottom: 0;
+    }
+
+    .work-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .work-item img {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+    }
+
+ 
+    /* Footer: stacked */
+    .site-footer, .copyright{
+        display: none;
+    }
+
+   
+}

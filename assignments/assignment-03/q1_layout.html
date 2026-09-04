@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1 - Responsive Layout Using CSS Grid</title>
+    <link rel="stylesheet" href="q1_style.css">
+</head>
+<body>
+
+    <!-- ===== Header ===== -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-icon">&#9670;</span>
+            <span class="logo-name">TechNova</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <button class="btn btn-primary">Get Started</button>
+
+        <!-- Shown only on small screens -->
+        <span class="menu-icon">&#9776;</span>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>
+                Build Better
+                <span class="highlight">Digital Experiences</span>
+            </h1>
+            <p>
+                We help brands and businesses grow with modern,
+                high-performance websites and applications.
+            </p>
+            <button class="btn btn-primary">Learn More</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="image/03.jpg" alt="Dashboard on a computer screen">
+        </div>
+    </section>
+
+    <!-- ===== Services Section ===== -->
+    <section class="services">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="service-grid">
+            <article class="card">
+                <div class="card-icon">&#128640;</div>
+                <div class="card-body">
+                    <h3>Web Development</h3>
+                    <p>We build modern and responsive websites.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">&#127912;</div>
+                <div class="card-body">
+                    <h3>UI/UX Design</h3>
+                    <p>We create beautiful and user-friendly designs.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-icon">&#128209;</div>
+                <div class="card-body">
+                    <h3>Web Applications</h3>
+                    <p>We develop powerful and scalable web applications.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ===== Our Work Section ===== -->
+    <section class="work">
+        <h2 class="section-title">Our Work</h2>
+
+        <div class="work-grid">
+            <div class="work-item"><img src="image/nepal.webp" alt="Project 1"></div>
+            <div class="work-item"><img src="image/05.jfif" alt="Project 2"></div>
+            <div class="work-item"><img src="image/04.jpg" alt="Project 3"></div>
+            <div class="work-item"><img src="image/06.jfif" alt="Project 4"></div>
+        </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="footer-col">
+            <h4>TechNova</h4>
+            <p>We are a creative team building modern digital products.</p>
+            <div class="social">
+                <span>&#128241;</span>
+                <span>&#128231;</span>
+                <span>&#128188;</span>
+                <span>&#128247;</span>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Services</h4>
+            <a href="#">Web Development</a>
+            <a href="#">UI/UX Design</a>
+            <a href="#">Web Applications</a>
+            <a href="#">SEO Optimization</a>
+        </div>
+
+        <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get updates and news.</p>
+            <input type="email" placeholder="Your email">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+    </footer>
+
+    <p class="copyright">&copy; 2024 TechNova. All rights reserved.</p>
+
+</body>
+</html>
