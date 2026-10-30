@@ -1,0 +1,276 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f5fa;
+    color: #17233a;
+    font-size: 14px;
+}
+
+/* Header */
+.header {
+    background-color: #293f63;
+    color: white;
+    text-align: center;
+    padding: 13px 10px 16px;
+    border-bottom: 1px solid #d5dce7;
+}
+
+.header h1 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header p {
+    margin: 0;
+    font-size: 12px;
+    color: #e6ebf4;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 16px auto 30px;
+    padding: 0 12px;
+}
+
+/* White panels */
+.panel {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: 0 3px 12px rgba(30, 50, 80, 0.05);
+}
+
+.panel h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Form */
+.form-panel h2 {
+    margin-bottom: 12px;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #d6dfec;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #17233a;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+input {
+    height: 30px;
+}
+
+textarea {
+    min-height: 55px;
+    resize: vertical;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6c91c7;
+    box-shadow: 0 0 0 2px rgba(108, 145, 199, 0.12);
+}
+
+/* Buttons */
+.button-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-post {
+    background-color: #ff642b;
+}
+
+.btn-reload {
+    background-color: #71839c;
+}
+
+/* Status messages */
+.message {
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #e4f7ed;
+    color: #18764d;
+    font-size: 11px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.message.error {
+    background-color: #fde8e7;
+    color: #b42318;
+}
+
+.message.loading {
+    background-color: #e8effb;
+    color: #294f85;
+}
+
+.api-note {
+    margin: 10px 0 6px;
+    color: #566985;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+/* Posts heading */
+.posts-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.posts-heading span {
+    color: #687994;
+    font-size: 9px;
+}
+
+/* Responsive posts grid */
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 9px;
+}
+
+/* Individual post card */
+.post-card {
+    min-width: 0;
+    border: 1px solid #dfe6f0;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.post-meta {
+    color: #687994;
+    font-size: 9px;
+    margin-bottom: 6px;
+}
+
+.post-title {
+    margin: 0 0 10px;
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.post-body {
+    margin: 0 0 10px;
+    color: #5e6f89;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+/* Card action buttons */
+.post-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.post-actions .btn {
+    padding: 6px 7px;
+    font-size: 9px;
+}
+
+.btn-put {
+    background-color: #25845f;
+}
+
+.btn-patch {
+    background-color: #ff642b;
+}
+
+.btn-delete {
+    background-color: #cf392e;
+}
+
+/* Empty state */
+.empty-state {
+    grid-column: 1 / -1;
+    padding: 20px;
+    text-align: center;
+    color: #687994;
+    font-size: 12px;
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+    .input-row {
+        grid-template-columns: 1fr;
+    }
+
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .panel {
+        padding: 12px;
+    }
+}
