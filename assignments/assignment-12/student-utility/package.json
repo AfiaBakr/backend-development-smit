@@ -1,0 +1,15 @@
+{
+  "name": "student-utility",
+  "version": "1.0.0",
+  "description": "Student Utility CLI using Node.jsnpm start",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

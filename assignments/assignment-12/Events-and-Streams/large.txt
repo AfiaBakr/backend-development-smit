@@ -1,0 +1,8 @@
+Student 101 registered successfully.
+Student 102 registered successfully.
+Student 103 logged into the system.
+Student 104 submitted an assignment.
+Student 105 completed the course.
+Student 106 downloaded course materials.
+Student 107 updated profile information.
+Student 108 logged out successfully.

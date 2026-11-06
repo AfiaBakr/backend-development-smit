@@ -1,0 +1,4 @@
+I learned Node.js runtime and npm.
+I learned how to use CommonJS modules.
+I learned about os, path and fs modules.
+I also learned how to manage files using Node.js.

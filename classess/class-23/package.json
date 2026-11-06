@@ -1,0 +1,15 @@
+{
+  "name": "class-23",
+  "version": "1.0.0",
+  "description": "Practice node",
+  "license": "ISC",
+  "author": "Afia",
+  "type": "commonjs",
+  "main": "next.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.23"
+  }
+}
